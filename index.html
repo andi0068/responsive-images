@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Responsive Images</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <p class="js-vw" style="padding: 1rem 0"></p>
+      </div>
+      <div class="img-container" style="--aspect: 1440/810">
+        <img
+          alt="mountains.png"
+          src="./assets/mountains-768w.png"
+          srcset="
+            ./assets/mountains-425w.png   425w,
+            ./assets/mountains-576w.png   576w,
+            ./assets/mountains-768w.png   768w,
+            ./assets/mountains-1024w.png 1024w,
+            ./assets/mountains-1440w.png 1440w
+          "
+          class="img--fill"
+        />
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
